@@ -87,17 +87,12 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .participant-item {
-  padding-left: 0.25rem;
   margin-bottom: 8px;
-}
-
-.participant-item::marker {
-  color: #3949ab;
 }
 
 .participant-row {
@@ -116,16 +111,24 @@ section h3 {
 }
 
 .remove-participant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #d32f2f;
   color: #fff;
   border: none;
   border-radius: 999px;
   width: 28px;
   height: 28px;
-  line-height: 1;
-  font-size: 1.2rem;
   cursor: pointer;
   padding: 0;
+  flex: 0 0 28px;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .remove-participant:hover {

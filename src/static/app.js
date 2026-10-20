@@ -47,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
                           aria-label="Remove ${email} from ${name}"
                           title="Unregister participant"
                         >
-                          ×
+                          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                            <path d="M9 3h6l1 2h4v2H4V5h4l1-2Zm-3 6h12l-1 12H7L6 9Zm3 2v8h2v-8H9Zm4 0v8h2v-8h-2Z" />
+                          </svg>
                         </button>
                       </div>
                     </li>
